@@ -1,0 +1,62 @@
+{
+  "RapidAPIKey": "",
+  "DiscordBotToken": "",
+  "DiscordMyID": "",
+  "DiscordServerIDs": {
+    "ServerID": "",
+    "ChannelID": ""
+  },
+  /* https://steamcommunity.com/dev/registerkey */
+  "SteamKey": {
+    "APIKey": "",
+    "SteamID64": ""
+  },
+  /* https://developer.spotify.com/dashboard/ */
+  "SpotifyAPI": {
+    "ClientID": "",
+    "ClientSecret": ""
+  },
+  /* https://www.twilio.com/try-twilio/ */
+  "TwilioAPI": {
+    "AuthToken": "",
+    "TwilioSID": "",
+    "MessageServiceSID": ""
+  },
+  /* https://api.imgbb.com/ */
+  "imgbbAPI": "",
+  "Applications": [
+    { "Name": "Discord" },
+    { "Name": "Notepad" },
+    { "Name": "Chrome" },
+    { "Name": "Whatsapp" },
+    { "Name": "Spotify" },
+    { "Name": "Steam" }
+  ],
+  "Services": [
+    {
+      "Name": "Print Spooler",
+      "Service": "Spooler"
+    }
+  ],
+  "SearchEngines": [
+    {
+      "Name": "Youtube",
+      "Url": "https://www.youtube.com/results?search_query="
+    }, {
+      "Name": "Google",
+      "Url": "https://www.google.com/search?q="
+    }, {
+      "Name": "Bing",
+      "Url": "https://www.bing.com/search?q="
+    }, {
+      "Name": "Twitch",
+      "Url": "https://www.twitch.tv/search?term="
+    }
+  ],
+  "Contacts": [
+    {
+      "Name": "Me",
+      "Number": "+123456789"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "RapidAPIKey": { "type": "string" },
+    "DiscordBotToken": { "type": "string" },
+    "DiscordMyID": { "type": "string" },
+    "DiscordServerIDs": {
+      "type": "object",
+      "properties": {
+        "ServerID": { "type": "string" },
+        "ChannelID": { "type": "string" }
+      },
+      "required": [ "ServerID", "ChannelID" ]
+    },
+    "SteamKey": {
+      "type": "object",
+      "properties": {
+        "APIKey": { "type": "string" },
+        "SteamID64": { "type": "string" }
+      },
+      "required": [ "APIKey", "SteamID64" ]
+    },
+    "SpotifyAPI": {
+      "type": "object",
+      "properties": {
+        "ClientID": { "type": "string" },
+        "ClientSecret": { "type": "string" }
+      },
+      "required": [ "ClientID", "ClientSecret" ]
+    },
+    "TwilioAPI": {
+      "type": "object",
+      "properties": {
+        "AuthToken": { "type": "string" },
+        "TwilioSID": { "type": "string" },
+        "MessageServiceSID": { "type": "string" }
+      },
+      "required": [ "AuthToken", "TwilioSID", "MessageServiceSID" ]
+    },
+    "imgbbAPI": { "type": "string" },
+    "Applications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Name": { "type": "string" }
+        },
+        "required": [ "Name" ]
+      }
+    },
+    "Services": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Name": { "type": "string" },
+          "Service": { "type": "string" }
+        },
+        "required": [ "Name", "Service" ]
+      }
+    },
+    "SearchEngines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Name": { "type": "string" },
+          "Url": { "type": "string" }
+        },
+        "required": [ "Name", "Url" ]
+      }
+    },
+    "Contacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Name": { "type": "string" },
+          "Number": { "type": "string" }
+        },
+        "required": [ "Name", "Number" ]
+      }
+    }
+  },
+  "required": [
+    "RapidAPIKey",
+    "DiscordBotToken",
+    "DiscordMyID",
+    "DiscordServerIDs",
+    "SteamKey",
+    "SpotifyAPI",
+    "TwilioAPI",
+    "imgbbAPI",
+    "Applications",
+    "Services",
+    "SearchEngines",
+    "Contacts"
+  ]
+}
